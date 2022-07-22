@@ -5,7 +5,7 @@ function evenOddCount() {
     var c = document.getElementById("c").value;
     var odd = 0;
     var even = 0;
-    var result = "There are:" + " " + odd + " " + "odd numbers and" + " " + even + " " + "even numbers";
+    
     a = parseInt(a);
     b = parseInt(b);
     c = parseInt(c);
@@ -15,10 +15,25 @@ function evenOddCount() {
     // Xu ly
 
     if (a % 2 == 0)  {
-        even += 1;
+        even++;
     }
-    console.log(even);
-    
+    if (a % 2 == 1) {
+        odd++
+    }
+    if (b % 2 == 0)  {
+        even++;
+    }
+    if (b % 2 == 1) {
+        odd++
+    }
+    if (c % 2 == 0)  {
+        even++;
+    }
+    if (c % 2 == 1) {
+        odd++
+    }
+
+    var result = "There are:" + " " + even + " " + "even numbers and" + " " + odd + " " + "odd numbers";
 
 
     // Dau ra
